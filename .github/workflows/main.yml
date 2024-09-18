@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Compile
-      run: make
+      run: make cv
 
     - uses: actions/upload-artifact@v3
       with:
-        name: examples
-        path: examples/*.pdf
+        name: personal
+        path: ./*.pdf
