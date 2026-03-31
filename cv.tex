@@ -1,59 +1,20 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
-%
-% This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
-%
-% Author:
-% Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
-%
-% Template license:
-% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-%
-
-
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
-% Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
-
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
 
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-% \definecolor{sectiondivider}{HTML}{5D5D5D}
-
-% Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
 
-% If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-
-
 %-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
+% PERSONAL INFORMATION
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
 \name{Marius Justus}{Theiß}
-% \position{Data driven{\enskip\cdotp\enskip}M. Sc. in Business Mathematics}
-\position{Senior Data Scientist \enskip\cdotp\enskip Machine Learning \enskip\cdotp\enskip Forecasting}
+\position{Senior Data Scientist · Machine Learning · Forecasting}
 \address{Lohstr. 19, 58553 Halver, North Rhine-Westphalia, Germany}
 
 \mobile{(+49) 151 6144-2928}
@@ -62,50 +23,95 @@
 \homepage{https://mjt91.url.lol}
 \github{mjt91}
 \linkedin{mariustheiss}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{medium-id}
-% \kaggle{kaggle-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
 
-\quote{``Data scientist with 6+ years in enterprise analytics, driving ML, AI, and forecasting initiatives. Seeking to apply technical expertise to operational challenges in Supply Chain or Express — optimizing networks, predicting demand, and automating decision-making at scale.''}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\quote{``Data scientist with 6+ years in enterprise analytics, driving ML, AI, and forecasting initiatives. Seeking to apply technical expertise to operational challenges in Supply Chain or Express.''}
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal information
-% Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader
 
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Marius Justus Theiß~~~·~~~Curriculum Vitae}
-  {\thepage}
+%-------------------------------------------------------------------------------
+% EXPERIENCE (COMPACT)
+%-------------------------------------------------------------------------------
+\cvsection{Experience}
 
+\begin{cventries}
+\cventry
+  {Senior Data Scientist}
+  {DHL Group · Global Business Services}
+  {Bonn, Germany}
+  {Jan. 2021 - Present}
+  {
+    \begin{cvitems}
+      \item {Lead ML-based demand forecasting initiative: 15\% error reduction, serving 300+ users}
+      \item {Built production ML pipeline (XGBoost/Prophet) with MLflow tracking and auto-retraining}
+      \item {Deployed RAG AI assistant (LangChain/GPT-4), reduced documentation search time by 90\%}
+      \item {Architected automated data pipelines: 100\% automation, 20+ hrs/week saved}
+      \item {See \textbf{Projects Portfolio} for detailed breakdowns}
+    \end{cvitems}
+  }
+
+\cventry
+  {Data Analytics Expert}
+  {DHL Group · Global Business Services}
+  {Bonn, Germany}
+  {May 2018 - Dec. 2020}
+  {
+    \begin{cvitems}
+      \item {Built modern financial reporting suite with dynamic inputs from IBM TM1}
+      \item {Administered self-service data warehouse for 100+ business users}
+      \item {Executed 10+ process optimization projects, reducing manual effort by 30\%}
+    \end{cvitems}
+  }
+\end{cventries}
 
 %-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
+% SKILLS
 %-------------------------------------------------------------------------------
-\input{cv/experience.tex}
-\input{cv/education.tex}
-\input{cv/thesis.tex}
-\input{cv/skills.tex}
-\input{cv/projects.tex}
-% \input{cv/activities.tex}
-% \input{cv/certificates.tex}
-% \input{cv/presentation.tex}
-% \input{cv/writing.tex}
-% \input{cv/committees.tex}
+\cvsection{Skills}
 
+\begin{cvskills}
+  \cvskill{ML \u0026 AI}{Time series forecasting, XGBoost, Prophet, MLflow, LangChain, RAG}
+  \cvskill{Programming}{Python (pandas, numpy), R, SQL, Node.js}
+  \cvskill{MLOps}{Docker, GitHub Actions, Airflow, API development}
+  \cvskill{Enterprise}{IBM TM1, PowerBI, SharePoint, Microsoft 365}
+  \cvskill{Languages}{German (native), English (fluent)}
+\end{cvskills}
 
 %-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\begin{cventries}
+\cventry
+  {Master of Science in Business Mathematics}
+  {Technical University of Dortmund}
+  {Dortmund, Germany}
+  {Oct. 2010 - Oct. 2017}
+  {
+    \begin{cvitems}
+      \item {Final grade: 1.5 (German scale) · Focus: Financial Econometrics, Optimization}
+    \end{cvitems}
+  }
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% PROJECTS REFERENCE
+%-------------------------------------------------------------------------------
+\cvsection{Selected Projects}
+
+\begin{cvparagraph}
+\textbf{Detailed project portfolio available separately:}
+\begin{itemize}
+    \item ML Demand Forecasting System — Production pipeline, 15\% error reduction
+    \item Finance RAG AI Assistant — LangChain/GPT-4, 90\% search time reduction
+    \item Enterprise Data Pipeline Automation — Airflow, 100\% reporting automation
+\end{itemize}
+\textit{Full technical deep-dive available upon request.}
+\end{cvparagraph}
+
 \end{document}
