@@ -14,11 +14,12 @@
 % PERSONAL INFORMATION
 %-------------------------------------------------------------------------------
 \name{Marius Justus}{Theiß}
-\position{Senior Data Scientist · Machine Learning · Forecasting}
+\photo[circle,edge,left]{./profile/me-medium.jpg}
+\position{Senior Finance Data Engineer · Machine Learning · Forecasting}
 \address{Lohstr. 19, 58553 Halver, North Rhine-Westphalia, Germany}
 
 \mobile{(+49) 151 6144-2928}
-\email{mjt91@omg.lol}
+\email{marius.theiss@dhl.com}
 \dateofbirth{June 2nd, 1991}
 \homepage{https://mjt91.url.lol}
 \github{mjt91}
@@ -26,7 +27,7 @@
 
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-\quote{``Data scientist with 6+ years in enterprise analytics, driving ML, AI, and forecasting initiatives. Seeking to apply technical expertise to operational challenges in Supply Chain or Express.''}
+\quote{``Data enthusiast with 6+ years in enterprise analytics, driving ML, AI, and forecasting initiatives. Seeking to apply technical expertise to new challenges outside of GBS.''}
 
 %-------------------------------------------------------------------------------
 \begin{document}
@@ -40,22 +41,21 @@
 
 \begin{cventries}
 \cventry
-  {Senior Data Scientist}
+  {Senior Finance Data Engineer}
   {DHL Group · Global Business Services}
   {Bonn, Germany}
   {Jan. 2021 - Present}
   {
     \begin{cvitems}
-      \item {Lead ML-based demand forecasting initiative: 15\% error reduction, serving 300+ users}
-      \item {Built production ML pipeline (XGBoost/Prophet) with MLflow tracking and auto-retraining}
-      \item {Deployed RAG AI assistant (LangChain/GPT-4), reduced documentation search time by 90\%}
-      \item {Architected automated data pipelines: 100\% automation, 20+ hrs/week saved}
-      \item {See \textbf{Projects Portfolio} for detailed breakdowns}
+      %\item {Lead ML-based demand forecasting initiative: 15\% error reduction, serving 300+ users}
+      \item {Built production ML pipeline (LGBM/statsforecast) with MLflow tracking and auto-retraining}
+      \item {Co-Lead a RAG AI assistant (LangChain/GPT-4 backend), serving a group of ~1000 users}
+      %\item {Architected automated data pipelines: 100\% automation, 20+ hrs/week saved}
     \end{cvitems}
   }
-
+\vspace{2em}
 \cventry
-  {Data Analytics Expert}
+  {Controlling Expert}
   {DHL Group · Global Business Services}
   {Bonn, Germany}
   {May 2018 - Dec. 2020}
@@ -63,10 +63,27 @@
     \begin{cvitems}
       \item {Built modern financial reporting suite with dynamic inputs from IBM TM1}
       \item {Administered self-service data warehouse for 100+ business users}
-      \item {Executed 10+ process optimization projects, reducing manual effort by 30\%}
+      \item {Executed 10+ process optimization projects, reducing manual effort required in month-end and reporting processes }
     \end{cvitems}
   }
 \end{cventries}
+
+
+%-------------------------------------------------------------------------------
+% PR JECTS REFERENCE
+%-------------------------------------------------------------------------------
+\cvsection{Selected Projects}
+
+\begin{cvparagraph}
+\textbf{Detailed project portfolio available separately:}
+\begin{itemize}
+    \item{Using machine learning for production ready financial time series}
+    \item ML Demand Forecasting System — Production pipeline, 15\% error reduction
+    \item Finance RAG AI Assistant — LangChain/GPT-4, 90\% search time reduction
+\end{itemize}
+\textit{Full technical deep-dive available upon request.}
+\end{cvparagraph}
+
 
 %-------------------------------------------------------------------------------
 % SKILLS
@@ -74,9 +91,9 @@
 \cvsection{Skills}
 
 \begin{cvskills}
-  \cvskill{ML \u0026 AI}{Time series forecasting, XGBoost, Prophet, MLflow, LangChain, RAG}
+  \cvskill{ML \& AI}{Time series forecasting, OpenClaw, MLflow, LangChain, RAG}
   \cvskill{Programming}{Python (pandas, numpy), R, SQL, Node.js}
-  \cvskill{MLOps}{Docker, GitHub Actions, Airflow, API development}
+  \cvskill{MLOps}{Docker, GitHub Actions, API development (using bruno/fastapi)}
   \cvskill{Enterprise}{IBM TM1, PowerBI, SharePoint, Microsoft 365}
   \cvskill{Languages}{German (native), English (fluent)}
 \end{cvskills}
@@ -100,18 +117,9 @@
 \end{cventries}
 
 %-------------------------------------------------------------------------------
-% PROJECTS REFERENCE
+% THESIS 
 %-------------------------------------------------------------------------------
-\cvsection{Selected Projects}
+\input{cv/thesis}
 
-\begin{cvparagraph}
-\textbf{Detailed project portfolio available separately:}
-\begin{itemize}
-    \item ML Demand Forecasting System — Production pipeline, 15\% error reduction
-    \item Finance RAG AI Assistant — LangChain/GPT-4, 90\% search time reduction
-    \item Enterprise Data Pipeline Automation — Airflow, 100\% reporting automation
-\end{itemize}
-\textit{Full technical deep-dive available upon request.}
-\end{cvparagraph}
 
 \end{document}
