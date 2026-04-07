@@ -1,50 +1,102 @@
-%-------------------------------------------------------------------------------
-%	SECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsection{Cover Letter}
-
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
 
 %-------------------------------------------------------------------------------
-%	CONTENT
+% CONFIGURATIONS
 %-------------------------------------------------------------------------------
-\begin{cvparagraph}
+\documentclass[11pt, a4paper]{awesome-cv}
 
-Dear Hiring Manager,
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-I am writing to express my interest in data science and analytics opportunities within DHL Supply Chain or DHL Express. Following a productive conversation with my current manager, I am eager to leverage my 6+ years of experience in advanced analytics and machine learning to drive operational excellence in a division closer to the core business.
+\colorlet{awesome}{awesome-red}
 
-**Why Supply Chain or Express:**
+\setbool{acvSectionColorHighlight}{true}
 
-Throughout my tenure in Global Business Services, I have witnessed how powerful data becomes when it is connected to operational decision-making. I am ready to move from supporting the business to driving it — optimizing supply chains, predicting demand fluctuations, and improving last-mile delivery through ML-driven forecasting.
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-**What I bring:**
 
-• **Technical depth:** Proven track record in time series forecasting, ML deployment (XGBoost, Prophet, MLflow), and generative AI (LangChain, RAG systems)
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\photo[circle,edge,left]{./profile/me-medium.jpg}
+\name{Marius Justus}{Theiß}
+\position{Senior Finance Data Engineer{\enskip\cdotp\enskip}Machine Learning{\enskip\cdotp\enskip}Forecasting}
+\address{Lohstr. 19, 58553 Halver, North Rhine-Westphalia, Germany}
 
-• **Operational mindset:** Experience building production-grade data pipelines processing 1TB+ monthly, serving 300+ business users
+\mobile{(+49) 151 6144-2928}
+\email{marius.theiss@dhl.com}
+\homepage{mjt91.url.lol}
+\github{mjt91}
+\linkedin{mariustheiss}
 
-• **Business impact:** Demonstrated results in working capital optimization (15\% improvement) and process automation (30\% efficiency gains)
+\quote{``Data enthusiast with 6+ years in enterprise analytics, driving ML, AI, and forecasting initiatives.''}
 
-• **Enterprise expertise:** Deep knowledge of DHL systems, processes, and data landscape from 6 years in Finance
 
-**Flexibility:**
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%-------------------------------------------------------------------------------
+\recipient
+  {Hiring Manager}
+  {DHL Supply Chain / DHL Express}
+\letterdate{\today}
+\lettertitle{Application for Data Science \& Analytics Role}
+\letteropening{Dear Hiring Manager,}
+\letterclosing{Best regards,}
+\letterenclosure[Attached]{Curriculum Vitae, Project Summary}
 
-I am open to relocation within Europe and excited to contribute to Supply Chain or Express wherever the need is greatest. Whether it is network optimization, demand sensing, or inventory forecasting, I bring the technical skills and business context to deliver immediate impact.
 
-I have attached my updated CV and a summary of my key projects. I would welcome the opportunity to discuss how my experience can translate to operational value in Supply Chain or Express.
+%-------------------------------------------------------------------------------
+\begin{document}
 
-Thank you for considering my application. I look forward to your response.
+\makecvheader[R]
 
-Best regards,
+\makecvfooter
+  {\today}
+  {Marius Theiß~~~·~~~Cover Letter}
+  {}
 
-Marius Justus Theiß
+\makelettertitle
 
-\end{cvparagraph}
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
 
-\vspace{1em}
+\lettersection{About Me}
+  {Since joining Deutsche Post DHL in May 2018, I have built a foundation in advanced
+  analytics within Global Business Services Global Controlling. Over six years, I have 
+  grown from Controlling Expert to Senior Finance Data Engineer, delivering ML 
+  pipelines, RAG-based AI assistants, and process automation that serves hundreds of 
+  business users. Now, I am ready to move from supporting the business to driving it
+  --- within an operational division where analytics directly impacts P\&L.}
 
-\textbf{Contact:}\\
-Email: mjt91@omg.lol \\
-Phone: (+49) 151 6144-2928 \\
-LinkedIn: linkedin.com/in/mariustheiss
+\lettersection{Why Supply Chain or Express?}
+  {In GBS, I have seen how powerful data becomes when it is connected to operational 
+  decision-making. I want to be where the action is --- optimizing supply chains, 
+  predicting demand fluctuations, or improving last-mile delivery through ML-driven 
+  forecasting. My track record in forecasting models, data pipelines, and process 
+  automation translates directly to Supply Chain or Express challenges: from 
+  inventory optimization and demand sensing to route planning. This move also aligns 
+  with DHL's strategic push toward AI-driven operations --- I bring both the technical
+  depth (Python, MLflow, forecasting systems) and the business context from years 
+  in controlling to make analytics actionable, not just academic.
 
+\lettersection{Why Me?}
+  {I bring a rare combination of technical depth and institutional knowledge. On the
+  technical side: production ML pipelines (LGBM/statsforecast with MLflow), a co-led
+  RAG AI assistant serving $\sim$1000 users, and analytics tooling that automates 
+  divisional financial reporting. On the business side: deep familiarity with 
+  DHL's systems, processes, and data landscape built over six years in Finance --- 
+  enabling immediate impact without a lengthy ramp-up. I am open to relocation 
+  within Europe and excited to contribute to operational excellence wherever the 
+  need is greatest. I have attached my CV and a summary of my top three projects 
+  that showcase my ability to deliver business impact through data.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+\makeletterclosing
+
+\end{document}
