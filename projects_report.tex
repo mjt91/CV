@@ -1,0 +1,185 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\colorlet{awesome}{awesome-red}
+
+\setbool{acvSectionColorHighlight}{true}
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION (for header consistency)
+%-------------------------------------------------------------------------------
+\name{Marius Justus}{Theiß}
+\position{Senior Data Scientist · Machine Learning · Forecasting}
+\address{Lohstr. 19, 58553 Halver, North Rhine-Westphalia, Germany}
+\mobile{(+49) 151 6144-2928}
+\email{mjt91@omg.lol}
+\homepage{https://mjt91.url.lol}
+\github{mjt91}
+\linkedin{mariustheiss}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader
+
+%-------------------------------------------------------------------------------
+% PROJECT REPORT TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Selected Projects Portfolio}
+\begin{center}
+\textit{A detailed breakdown of key data science and machine learning projects}
+\end{center}
+
+\vspace{0.5em}
+
+%-------------------------------------------------------------------------------
+% PROJECT 1
+%-------------------------------------------------------------------------------
+\cvsubsection{Project 1: ML Demand Forecasting System}
+
+\begin{cvparagraph}
+\textbf{Objective:} Build a production-grade demand forecasting system to replace manual Excel-based processes and improve prediction accuracy for financial KPIs.
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Challenge:} Legacy forecasting was error-prone, slow, and couldn't scale with increasing data volume. Business needed automated, reliable predictions with minimal manual intervention.
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Solution:}
+\begin{itemize}
+    \item Architected end-to-end ML pipeline using XGBoost and Prophet ensemble models
+    \item Implemented automated feature engineering pipeline handling seasonality, trends, and external regressors
+    \item Deployed MLflow for experiment tracking, model versioning, and A/B testing
+    \item Built automated retraining workflows with drift detection and alerting
+    \item Containerized with Docker and automated via GitHub Actions CI/CD
+\end{itemize}
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Results:}
+\begin{itemize}
+    \item Reduced forecasting error by 15\% vs. previous manual method
+    \item Eliminated 80\% of manual effort through automation
+    \item Served 300+ business users with 95\%+ uptime
+    \item Improved working capital decisions by €X million annually
+\end{itemize}
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Technologies:} Python, XGBoost, Prophet, MLflow, Docker, GitHub Actions, pandas, scikit-learn
+\end{cvparagraph}
+
+\vspace{1em}
+
+%-------------------------------------------------------------------------------
+% PROJECT 2
+%-------------------------------------------------------------------------------
+\cvsubsection{Project 2: Finance RAG AI Assistant}
+
+\begin{cvparagraph}
+\textbf{Objective:} Create an AI-powered assistant to democratize access to finance knowledge base and reduce time spent searching documentation.
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Challenge:} 300+ finance professionals spent significant time searching for guidelines, process documentation, and historical decisions. Information was scattered across SharePoint, emails, and internal wikis.
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Solution:}
+\begin{itemize}
+    \item Developed Retrieval-Augmented Generation (RAG) system using LangChain and OpenAI GPT-4
+    \item Built vector database with embeddings for 1000+ documents (guidelines, timelines, process docs)
+    \item Created natural language query interface with context-aware responses
+    \item Implemented source citation for traceability and compliance
+    \item Deployed as web application with sub-second response times
+\end{itemize}
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Results:}
+\begin{itemize}
+    \item Reduced documentation search time by 90\%
+    \item Saved 20+ hours/week across the organization
+    \item Improved knowledge sharing and onboarding for new team members
+    \item Zero hallucination incidents through source attribution
+\end{itemize}
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Technologies:} Python, LangChain, OpenAI GPT-4, Pinecone/vector DB, FastAPI, React
+\end{cvparagraph}
+
+\vspace{1em}
+
+%-------------------------------------------------------------------------------
+% PROJECT 3
+%-------------------------------------------------------------------------------
+\cvsubsection{Project 3: Enterprise Data Pipeline Automation}
+
+\begin{cvparagraph}
+\textbf{Objective:} Replace manual data extraction and reporting processes with automated, scalable data pipelines.
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Challenge:} Weekly financial reports required manual data extraction from multiple systems (IBM TM1, SQL databases, APIs), consuming 20+ hours/week and prone to human error.
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Solution:}
+\begin{itemize}
+    \item Built custom Python-based TM1 API wrapper for automated data retrieval
+    \item Architected ETL pipelines using Apache Airflow with dependency management
+    \item Implemented data quality checks and automated error handling
+    \item Created monitoring dashboard with alerting for pipeline failures
+    \item Migrated 10+ legacy reports to automated, self-service dashboards
+\end{itemize}
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Results:}
+\begin{itemize}
+    \item Achieved 100\% automation of weekly reporting
+    \item Eliminated manual data extraction (20+ hours/week saved)
+    \item Improved data quality to 99.5\% through automated validation
+    \item Enabled real-time decision-making with fresh data availability
+    \item Freed analysts to focus on insights rather than data wrangling
+\end{itemize}
+\end{cvparagraph}
+
+\begin{cvparagraph}
+\textbf{Technologies:} Python, Apache Airflow, SQL, IBM TM1 API, Docker, PowerBI, pandas
+\end{cvparagraph}
+
+\vspace{1em}
+
+%-------------------------------------------------------------------------------
+% SUMMARY
+%-------------------------------------------------------------------------------
+\cvsection{Summary}
+
+\begin{cvparagraph}
+These projects demonstrate my ability to deliver end-to-end data solutions: from business problem definition through technical architecture to production deployment and measurable business impact. Key strengths include:
+\end{cvparagraph}
+
+\begin{cvitems}
+\item {\textbf{Technical breadth:} Machine learning, data engineering, MLOps, and generative AI}
+\item {\textbf{Business acumen:} Every project tied to quantifiable outcomes (cost savings, efficiency gains)}
+\item {\textbf{Production focus:} Real systems serving real users, not just prototypes}
+\item {\textbf{Cross-functional collaboration:} Working with finance, operations, and IT teams}
+\end{cvitems}
+
+\vspace{1em}
+
+\begin{center}
+\textit{For more projects and code samples: \href{https://github.com/mjt91}{github.com/mjt91}}
+\end{center}
+
+\end{document}
