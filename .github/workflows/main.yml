@@ -14,7 +14,10 @@ jobs:
       uses: actions/checkout@v6
 
     - name: Compile
-      run: make
+      run: make cv
+    
+    - name: Compile
+      run: make coverletter
 
     - uses: actions/upload-artifact@v6
       with:
