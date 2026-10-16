@@ -1,0 +1,105 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\colorlet{awesome}{awesome-red}
+
+\setbool{acvSectionColorHighlight}{true}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%\tPERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\photo[circle,edge,left]{./profile/me-medium.jpg}
+\name{Marius}{Theiß}
+\position{Senior Finance Data Engineer{\enskip\cdotp\enskip}Machine Learning{\enskip\cdotp\enskip}Forecasting}
+\address{Lohstr. 19, 58553 Halver, North Rhine-Westphalia, Germany}
+
+\mobile{(+49) 151 6144-2928}
+\email{marius.theiss@dhl.com}
+\homepage{mjt91.url.lol}
+\github{mjt91}
+\linkedin{mariustheiss}
+
+\quote{``Data enthusiast with 8+ years in enterprise analytics, driving ML, AI, and forecasting initiatives.''}
+
+
+%-------------------------------------------------------------------------------
+%\tLETTER INFORMATION
+%-------------------------------------------------------------------------------
+\recipient
+  {Hiring Team}
+  {DHL Express Singapore}
+\letterdate{\today}
+\lettertitle{Application for Senior Business Analyst (Data Governance)}
+\letteropening{Dear Hiring Team,}
+\letterclosing{Best regards,}
+\letterenclosure[Attached]{Curriculum Vitae, Project Summary}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[R]
+
+\makecvfooter
+  {\today}
+  {Marius Theiß~~~·~~~Cover Letter}
+  {}
+
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%\tLETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Why DHL Express}
+  {DHL Express stands out not only for its global reach, but for the way it connects people,
+  operations, and decision-making. As an internal candidate with more than eight years in DHL Group,
+  I am motivated by the opportunity to support a role where data governance directly improves
+  cross-functional execution and decision-making. The Senior Business Analyst position in Singapore
+  is a strong fit because it combines business analysis, stakeholder alignment, data quality,
+  and analytics --- the core areas in which I have built my career.}
+
+\lettersection{Why Me}
+  {Since joining Deutsche Post DHL in 2018, I have developed from Controlling Expert into a
+  Senior Finance Data Engineer in Global Business Services, partnering with senior stakeholders
+  to improve reporting, forecasting, and decision support. My work has required translating business
+  requirements into data products, aligning technical implementation with operational needs,
+  and driving adoption across cross-functional teams.
+
+  In practice, this has meant building forecasting pipelines, designing reporting solutions,
+  and delivering AI- and analytics-driven tools that simplify complex processes for end users.
+  I work comfortably across business and technical audiences: framing requirements, documenting
+  processes, and ensuring solutions are useful, robust, and understood.
+
+  This background aligns well with your need for someone who can coordinate across functions,
+  articulate business requirements clearly, support issue resolution, and improve data quality and
+  governance practices. I bring strong experience in Power BI-based reporting, SQL, Python,
+  and enterprise data environments, together with a practical understanding of AI tools,
+  including their limitations and governance implications.}
+
+\lettersection{Relocation and Motivation}
+  {I am open to relocating to Singapore for this opportunity and would welcome the chance to discuss
+  how my DHL background, analytical skill set, and structured way of working can support the Data
+  Quality \& Governance team. I also live with a well-managed disability, so as part of any
+  relocation discussion I would appreciate understanding the practical framework for continuity of
+  care in Singapore. I would be glad to discuss my application in more detail.}
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+\makeletterclosing
+
+\end{document}
